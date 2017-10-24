@@ -1,7 +1,7 @@
 # Patient-WebApp
 
 ## Initialization
-From the project root directory, run "npm install"
+From the project root directory, run "npm install" to download the dependencies
 
 ## Run the app
 1) Type "node index.js" on Terminal
