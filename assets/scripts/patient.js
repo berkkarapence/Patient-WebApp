@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 // Column Names for the table
 let tableColumnNames = ["Name of Patient", "Organization Name", "Gender",
- 						"Number of Conditions they have", "List of All Conditions"];
+ 			"Number of Conditions they have", "List of All Conditions"];
 
 // Build Tables here
 function buildTable() {
@@ -48,12 +48,12 @@ function populateTable(data) {
         let rowCount = table.rows.length;
 
         for(let i = 0; i < data.identifier.length; i++) {
-        	let givenName = data["identifier"][i]["name"][0]["given"];
-			let familyName = data["identifier"][i]["name"][0]["family"];
-			let name = givenName + " " + familyName
-			let organizationName = data["identifier"][i]["managingOrganization"]["display"];
-			let gender = data["identifier"][i]["gender"];
-			let conditions = data["identifier"][i]["conditions"];
+            let givenName = data["identifier"][i]["name"][0]["given"];
+	    let familyName = data["identifier"][i]["name"][0]["family"];
+	    let name = givenName + " " + familyName
+	    let organizationName = data["identifier"][i]["managingOrganization"]["display"];
+	    let gender = data["identifier"][i]["gender"];
+	    let conditions = data["identifier"][i]["conditions"];
 
             let row = table.insertRow(rowCount);
             let cell0 = row.insertCell(0);
